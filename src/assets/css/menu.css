@@ -54,7 +54,7 @@ header label:hover{
     background:transparent;
     display: flex;
     width: 100%;
-    position: static;
+    position: absolute;
     z-index: 50;
     font-family: 'Coda', cursive;;
 

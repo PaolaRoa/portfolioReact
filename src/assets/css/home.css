@@ -1,0 +1,31 @@
+#bienvenida {
+    font-family: "Raleway", sans-serif;
+    font-size: 21px;
+    text-align: center;
+    align-self: center;
+    color: white;
+    padding: 50px;
+    padding-top: 100px;
+    line-height: 50px;
+    font-weight: 400;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(15, 1, 66, 0.733)),
+    url(../images/keyboard.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 70vh;
+    background-repeat: no-repeat;
+    overflow-y: hidden;
+  }
+  .blur {
+    animation-duration: 3s;
+    animation-name: itemin;
+    animation-timing-function: ease-out;
+  }
+  @keyframes itemin {
+    from {
+      filter: blur(10px);
+    }
+    to {
+      filter: blur(0px);
+    }
+  }
