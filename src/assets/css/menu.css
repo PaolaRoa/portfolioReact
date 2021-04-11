@@ -1,149 +1,162 @@
-
-header{
-    width: 100vw;
-    background:transparent;
-    height: fit-content;
+header {
+  width: 100vw;
+  background: transparent;
+  height: fit-content;
 }
 
 .logo {
-    width: 100px;
-    margin: 20px;
-    transition: 2s;
-    
-  }
-  .logo-2 {
-    height: 40px;
-    width: auto;
-    margin: 0;
-    padding:  5px 20px ;
-    transition: 2s;
-  }
-  .mainmenu {
-    display: flex;
-    flex: 80%;
-    list-style: none;
-    float: right;
-    margin-right: 5%;
-    padding-top: 20px;
-    /*border: red;
+  width: 100px;
+  margin: 20px;
+  transition: 2s;
+}
+.logo-2 {
+  height: 40px;
+  width: auto;
+  margin: 0;
+  padding: 5px 20px;
+  transition: 2s;
+}
+.mainmenu {
+  display: flex;
+  flex: 80%;
+  list-style: none;
+  float: right;
+  margin-right: 5%;
+  padding-top: 20px;
+  /*border: red;
     border-style: solid;*/
-  
-    
-  }
-#btn-menu{
-    display: none;
+}
+#btn-menu {
+  display: none;
 }
 
-header i{
-    color: grey;
-    font-size: 24px;
+header i {
+  color: grey;
+  font-size: 24px;
 }
-header label{
-    display: none;
-    width: 30px;
-    height: 30px;
-    padding: 10px;
-}
-
-header label:hover{
-    cursor:pointer;
-    background: rgba(0,0,0,0.3);
+header label {
+  display: none;
+  width: 30px;
+  height: 30px;
+  padding: 10px;
 }
 
-.menu{
-    background:transparent;
-    display: flex;
-    width: 100%;
-    position: fixed;
-    height: 50px;
-    z-index: 50;
-    font-family: 'Coda', cursive;
-    transition: 0.5s;
-    transition-timing-function: ease-in;
-  }
-.darkmenu{
-    background: rgb(132,0,255);
-    background: linear-gradient(24deg, rgba(132,0,255,0) 14%, rgba(93,0,185,0.6558998599439776) 60%, rgba(38,0,88,1) 100%);
-    display: flex;
-    width: 100%;
-    position: fixed;
-    z-index: 50;
-    font-family: 'Coda', cursive;;
-    height: 50px;
-    transition: 1s;
-}
-.darkmenu>#logo-menu > img{
-    height: 30px;
-    width: auto;
-    position: relative;
-    bottom: 10px;
-    /*filter: invert(1);*/
+header label:hover {
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.3);
 }
 
-.mainmenu ul{
-    margin: 0;
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
+.menu {
+  background: transparent;
+  display: flex;
+  width: 100%;
+  position: fixed;
+  height: 50px;
+  z-index: 50;
+  font-family: "Coda", cursive;
+  transition: 0.5s;
+  transition-timing-function: ease-in;
+}
+.darkmenu {
+  background: rgb(132, 0, 255);
+  background: linear-gradient(
+    24deg,
+    rgba(132, 0, 255, 0) 14%,
+    rgba(93, 0, 185, 0.6558998599439776) 60%,
+    rgba(38, 0, 88, 1) 100%
+  );
+  display: flex;
+  width: 100%;
+  position: fixed;
+  z-index: 50;
+  font-family: "Coda", cursive;
+  height: 50px;
+  transition: 1s;
+}
+.darkmenu > #logo-menu > img {
+  height: 30px;
+  width: auto;
+  position: relative;
+  bottom: 10px;
+  /*filter: invert(1);*/
+}
+.movilmenu {
+  display: none;
+}
+.mainmenu ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
 }
 
 /*.menu li:hover{
     background: green;
 }*/
-.mainmenu li a {
-    display:block;
-    padding: 15px 20px;
-    color: white;
-    text-decoration: none;
-    padding-top: 0;
+.mainmenu li a,
+.movilmenu li a {
+  display: block;
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+  padding-top: 0;
 }
-.mainmenu li a:hover{
-    color: rgb(0, 233, 163);
+.mainmenu li a:hover {
+  color: rgb(0, 233, 163);
 }
-.mainmenu li a:active
-{
-    color: rgb(0, 233, 163);
-    
-}
-
-
-
-@media (max-width:778px){
-    header label{
-        display:block;
-
-    }
-
-    .mainmenu {
-        position: absolute;
-        background-color: rebeccapurple;
-        margin-left: -70%;
-        transition: 0.5s;
-    }
-
-    .mainmenu ul{
-        flex-direction: column;
-        widows: 70%;
-    }
-
-    .mainmenu li{
-        border-top: 1px solid white;
-    }
-
-    #btn-menu:checked ~ .mainmenu{
-        margin: 0;
-    }
-    .logo{
-        display: none;
-    }
-    .menu-scroll{
-        display: none;
-    
-    }
-    .darkmenu{
-        display: none;
-    }
+.mainmenu li a:active {
+  color: rgb(0, 233, 163);
 }
 
+@media (max-width: 778px) {
+  header label {
+    display: block;
+  }
+
+  .mainmenu {
+    display: none;
+    transition: all 0.5s;
+  }
+  .movilmenu {
+    display: block;
+    background-color: #8d7cf2;
+    transition: all 0.5s;
+    width: fit-content;
+    height: 100vh;
+  }
+  .movilmenu.hide {
+    margin-left: -100vw;
+    transition: all 0.5s;
+    background-color: transparent;
+  }
+  .movilmenu ul {
+    list-style: none;
+    margin: 0;
+    position: absolute;
+    background-color: rgb(58, 29, 138);
+    top: 0;
+    padding-top: 40px;
+  }
+  .logo {
+    display: none;
+  }
+  .menu-scroll {
+    display: none;
+  }
+  .darkmenu {
+    display: none;
+  }
+  #btn-menu {
+    display: block;
+    background-color: transparent;
+    border: none;
+    color: rgb(1, 209, 147);
+    outline: none;
+    font-size: 2em;
+    padding: 10px;
+    position: absolute;
+    z-index: 1;
+  }
+}

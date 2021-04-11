@@ -7,14 +7,22 @@ import {
 }from 'react-router-dom';
 import logo from '../assets/images/logoPR.png';
 import '../assets/css/menu.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faBars, faTimes} from '@fortawesome/free-solid-svg-icons';
 
 const Header = () => {
-
-    const [solidHeader, setsolidHeader] = useState('true');
     
-    const setHeader=()=>{
-        setsolidHeader(!solidHeader);
+    const menu = <FontAwesomeIcon icon={faBars} className="" />;
+    const close = <FontAwesomeIcon icon={faTimes} className="" />;
+
+    const [solidHeader, setsolidHeader] = useState(true);
+    const [movilMenu, setMovilMenu] = useState(false);
+    
+    const handleMenu =()=>{
+        setMovilMenu(!movilMenu);
+        console.log(movilMenu);
     }
+    
     
     const changeHeader=()=>{
         if(window.scrollY>100){
@@ -23,8 +31,7 @@ const Header = () => {
         else{
             setsolidHeader(true)
         }
-    }
-    
+    }   
     window.addEventListener('scroll',()=>changeHeader())
 
     return (
@@ -34,10 +41,30 @@ const Header = () => {
                 <img className="logo" src={logo} alt="" />
             </Link>
             <header>
-                <input type="checkbox" id="btn-menu" />
-                <label htmlFor="btn-menu"><i className="fas fa-bars"></i></label>
+                <button id="btn-menu" onClick={()=>handleMenu()}>{
+                    movilMenu? close : menu
+                }</button>
                 <nav className="mainmenu">
                     <ul>
+                        <li>
+                            <Link to="/">Inicio</Link>
+                        </li>
+                        <li>
+                            <Link to="/about">Sobre mí</Link>
+                        </li>
+                        <li>
+                            <Link to="/portfolio">Portafolio</Link>
+                        </li>
+                        <li>
+                            <Link to="/services">Servicios</Link>
+                        </li>
+                        <li>
+                            <Link to="/contact">Contáctame</Link>
+                        </li>
+                    </ul>
+                </nav>
+                <nav className={movilMenu? 'movilmenu' : 'movilmenu hide'}>
+                                        <ul>
                         <li>
                             <Link to="/">Inicio</Link>
                         </li>
