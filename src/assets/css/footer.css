@@ -1,15 +1,53 @@
-footer{
+footer
+{
     background-color: rgb(31, 31, 31);
     color: white;
-    display: flex;
+    display: grid;  
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 3fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
     width: 100%;
     justify-content: space-around;
     position: fixed;
     bottom: 0;
-    height: 50px;
+    height: 30px;
     transition: all 1s;
+    font-family: "Raleway", sans-serif;
   }
-  footer:hover{
-      height: 100px;
+  footer:hover
+  {
+      height: 120px;
       transition: all 1s;
+  }
+  .openClose
+  {
+    grid-area: 1 / 1 / 2 / 4; 
+    text-align: center;
+    padding: 5px;
+  }
+  .logoFooter
+  {
+    grid-area: 2 / 1 / 3 / 2;
+    text-align: center;
+  }
+  .copy
+  {
+    grid-area: 2 / 2 / 3 / 3;
+    text-align: center;
+    color: gainsboro;
+    font-size: 14px;
+  }
+  .RRSS
+  {
+    grid-area: 2 / 3 / 3 / 4;
+    text-align: center;
+  }
+  .i{
+      font-size: 36px;
+      padding: 15px;
+      color: #8d7cf2;
+  }
+  .i:hover{
+      color: rgb(0, 233, 163);
   }

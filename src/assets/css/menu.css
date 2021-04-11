@@ -54,12 +54,32 @@ header label:hover{
     background:transparent;
     display: flex;
     width: 100%;
-    position: absolute;
+    position: fixed;
+    height: 50px;
+    z-index: 50;
+    font-family: 'Coda', cursive;
+    transition: 0.5s;
+    transition-timing-function: ease-in;
+  }
+.darkmenu{
+    background: rgb(132,0,255);
+    background: linear-gradient(24deg, rgba(132,0,255,0) 14%, rgba(93,0,185,0.6558998599439776) 60%, rgba(38,0,88,1) 100%);
+    display: flex;
+    width: 100%;
+    position: fixed;
     z-index: 50;
     font-family: 'Coda', cursive;;
+    height: 50px;
+    transition: 1s;
+}
+.darkmenu>#logo-menu > img{
+    height: 30px;
+    width: auto;
+    position: relative;
+    bottom: 10px;
+    filter: invert(1);
+}
 
-  
-  }
 .mainmenu ul{
     margin: 0;
     list-style: none;
@@ -78,6 +98,14 @@ header label:hover{
     color: white;
     text-decoration: none;
     padding-top: 0;
+}
+.mainmenu li a:hover{
+    color: rgb(0, 233, 163);
+}
+.mainmenu li a:active
+{
+    color: rgb(0, 233, 163);
+    
 }
 
 
@@ -116,9 +144,3 @@ header label:hover{
     }
 }
 
-.menu-scroll{
-    background: #623ee5;
-    height: 50px;
-    transition: 2s;
-
-}

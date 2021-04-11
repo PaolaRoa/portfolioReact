@@ -1,4 +1,4 @@
-import React from 'react';
+import {React, useState} from 'react';
 import {
     BrowserRouter as Router,
     Link,
@@ -9,16 +9,34 @@ import logo from '../assets/images/logoPR.png';
 import '../assets/css/menu.css';
 
 const Header = () => {
+
+    const [solidHeader, setsolidHeader] = useState('true');
+    
+    const setHeader=()=>{
+        setsolidHeader(!solidHeader);
+    }
+    
+    const changeHeader=()=>{
+        if(window.scrollY>100){
+            setsolidHeader(false);    
+        }
+        else{
+            setsolidHeader(true)
+        }
+    }
+    
+    window.addEventListener('scroll',()=>changeHeader())
+
     return (
 
-        <div class="menu">
-            <a href="#inicio" id="logo-menu">
-                <img class="logo" src={logo} alt="" />
-            </a>
+        <div className={solidHeader?'menu':'darkmenu'} id="menu" >
+            <Link to="/" id="logo-menu">
+                <img className="logo" src={logo} alt="" />
+            </Link>
             <header>
                 <input type="checkbox" id="btn-menu" />
-                <label for="btn-menu"><i class="fas fa-bars"></i></label>
-                <nav class="mainmenu">
+                <label htmlFor="btn-menu"><i className="fas fa-bars"></i></label>
+                <nav className="mainmenu">
                     <ul>
                         <li>
                             <Link to="/">Inicio</Link>

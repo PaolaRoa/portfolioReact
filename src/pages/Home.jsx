@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../components/Header';
 import '../assets/css/home.css';
 import Footer from '../components/Footer';
+import About from './About';
 
 
 const Home = () => {
@@ -9,8 +10,9 @@ const Home = () => {
         <>
         <div id="bienvenida">
             <h1>Hola,<br />Soy Paola Roa</h1>
-            <h2 class="blur">Desarrolladora Web</h2>
+            <h2 className="blur">Desarrolladora Web</h2>
         </div>
+        <About />
         <Footer />
         </>
     );
