@@ -77,7 +77,7 @@ header label:hover{
     width: auto;
     position: relative;
     bottom: 10px;
-    filter: invert(1);
+    /*filter: invert(1);*/
 }
 
 .mainmenu ul{
