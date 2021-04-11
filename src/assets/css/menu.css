@@ -111,10 +111,6 @@ header label:hover {
 }
 
 @media (max-width: 778px) {
-  header label {
-    display: block;
-  }
-
   .mainmenu {
     display: none;
     transition: all 0.5s;
@@ -146,7 +142,7 @@ header label:hover {
     display: none;
   }
   .darkmenu {
-    display: none;
+    background:none;
   }
   #btn-menu {
     display: block;
