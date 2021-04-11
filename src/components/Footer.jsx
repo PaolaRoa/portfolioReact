@@ -36,7 +36,7 @@ const Footer = () => {
       </div>
 
       <div className="logoFooter">
-        <img src={logo} alt="PaolaRoa" className="logo" />
+        <img src={logo} alt="PaolaRoa" />
       </div>
 
       <div className="copy">

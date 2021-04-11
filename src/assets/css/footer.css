@@ -51,3 +51,19 @@ footer
   .i:hover{
       color: rgb(0, 233, 163);
   }
+  .logoFooter>img{
+    width: 70px;
+  }
+  @media(max-width: 600px){
+    footer{
+      display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    }
+    footer:hover{
+      height: auto;
+    }
+  
+
+
+  }

@@ -1,8 +1,10 @@
 #about-me{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.13), rgba(15, 1, 66, 0.397)),url(../images/leaf.jpg);
+    background-color: white;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
+    color: #313131;
+    font-family: 'Lato', sans-serif;
   }
   .bio {
     display: grid;
@@ -10,9 +12,13 @@
     justify-content: space-around;
     justify-items: center;
     padding-top: 89px;
-    height: 85vh;
+    height: auto;
   }
-  
+  #aboutTitle{
+    color:rgb(1, 209, 147);
+    font-family: 'Coda', cursive;
+    font-size: 1.2em;
+  }
   .bio > div {
     padding: 50px;
   }
@@ -24,7 +30,7 @@
   }
   @media (max-width: 800px) {
     .bio {
-      display: grid;
-      grid-template-rows: auto auto;
+      display: flex;
+      flex-wrap: wrap;
     }
   }
