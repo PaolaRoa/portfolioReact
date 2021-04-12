@@ -36,7 +36,6 @@ const Skills =()=>{
           <h6>40%</h6>
           <div className="progress40 bar " ></div>
         </div>
-        <iframe src="https://docs.google.com/spreadsheets/d/1QCj15rZAIaETk3Ig_Z8_bl8sE9A8x9spkQZZCV0Xu_8/edit?usp=sharing"></iframe>
       </div>
 
         

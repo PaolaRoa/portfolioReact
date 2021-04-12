@@ -4,6 +4,7 @@ import '../assets/css/home.css';
 import Footer from '../components/Footer';
 import About from './About';
 import Skills from './Skills'
+import Portfolio from './Portfolio';
 
 
 const Home = () => {
@@ -14,7 +15,7 @@ const Home = () => {
             <h2 className="blur">Desarrolladora de Software</h2>
         </div>
         <About />
-        <Skills />
+        <Portfolio />
         <Footer />
         </>
     );
