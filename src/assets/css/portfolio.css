@@ -1,6 +1,20 @@
+#portfolioContainer {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(15, 1, 66, 0.733)),url("../images/bgPurple.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#portfolioContainer>h4{
+    margin: 0;
+    padding-top: 50px;
+    text-align: center;
+    color: rgb(197, 197, 197);
+    font-family: 'Coda', cursive;
+    font-size: 1.2em;
+}
 #portfolio {
-    margin-bottom: 50px;
-    margin-top: 50px;
+  padding-bottom: 50px;
+  padding-top: 50px;
   padding: 20px;
   display: grid;
   grid-template-columns: 1fr 10fr 1fr;
@@ -16,41 +30,41 @@
   outline: none;
   color: blueviolet;
 }
-#p1{
-    background-image: url(../images/portfolio/beebeauty.png);
+#p1 {
+  background-image: url(../images/portfolio/beebeauty.png);
 }
 .slide {
-    display: none;
-    background-position: center center;
-    background-size: cover;
-    position: relative;
-    transition: 0.4s ease;
-    width: 90vw;
-    height: 70vh;
-    transition: 0.4s ease;
-    width: 90vw;
-    height: 90vh;
-    margin: 0;
-    
-    
-  }
-  
-  .slide.active {
-    opacity: 1;
-    display: flex;
-    /* justify-content: center; */
-    justify-content: space-around;
-    align-items: center;
-    justify-content: center;
-    align-items: center;
-  }
+  display: none;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  transition: 0.4s ease;
+  width: 90vw;
+  height: 70vh;
+  transition: 0.4s ease;
+  width: 90vw;
+  height: 90vh;
+  margin: 0;
+}
 
-  .project{
-      background-color: red;
-      height: -webkit-fill-available;
-        width: -webkit-fill-available;
-        margin: 30px;
-  }
-  #pContainer{
-      background-color: turquoise;
-  }
+.slide.active {
+  opacity: 1;
+  display: flex;
+  /* justify-content: center; */
+  justify-content: space-around;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.project {
+
+    border-radius: 20px;
+}
+#pContainer {
+}
+
+.imgP{
+    border-radius: 15px;
+    height: 70vh;
+}

@@ -2,6 +2,9 @@ import {React, useState} from 'react';
 import '../assets/css/portfolio.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faChevronLeft, faChevronCircleRight, faChevronRight} from '@fortawesome/free-solid-svg-icons';
+import bBeauty from '../assets/images/portfolio/beebeauty.png';
+import mLiz from '../assets/images/portfolio/www.marilizcastillo.com_.png';
+import pPan from '../assets/images/portfolio/panalera.jpg';
 
 const Portfolio = () => {
 
@@ -30,44 +33,26 @@ const Portfolio = () => {
 
 
     return ( 
-        <>
-        <h1>Portafolio</h1>
+        <div id="portfolioContainer">
+        <h4>Portafolio</h4>
         <div id="portfolio">
             <div id="btnLeft">
                 <button className='arrow' onClick={()=>handleActive('last')} >{left}  </button>
             </div>
             <div id="pContainer">
-                <div className={active===1? 'slide active': 'slide'}>
+                <div className={active===1? 'slide active': 'slide'} href="www.marilizcastillo.com">
                     <div className="project">
-                        p1
-                    </div>
-                    <div className="project">  
-                    p2
-                    </div>
-                    <div className="project">
-                        p3
+                        <img className="imgP" src={bBeauty} alt=""/>
                     </div>
                 </div>
                 <div className={active===2? 'slide active': 'slide'}>
-                    <div className="project">
-                    p4
-                    </div>
-                    <div className="project">  
-                    p5
-                    </div>
-                    <div className="project">
-                    p6
+                <div className="project">
+                    <img className="imgP" src={mLiz} alt=""/>
                     </div>
                 </div>
                 <div className={active===3? 'slide active': 'slide'}>
-                    <div className="project">
-                        7
-                    </div>
-                    <div className="project">  
-                    8
-                    </div>
-                    <div className="project">
-                        9
+                <div className="project">
+                        <img className="imgP" src={pPan} alt=""/>
                     </div>
                 </div>
             </div>
@@ -75,7 +60,7 @@ const Portfolio = () => {
                 <button className='arrow' onClick={()=>handleActive('next')}>{right}</button>
             </div>
         </div>
-        </>
+        </div>
     )
 }
  
