@@ -47,31 +47,26 @@ header label:hover {
 }
 
 .menu {
-  background: transparent;
+  background-color: transparent;
   display: flex;
   width: 100%;
   position: fixed;
   height: 50px;
   z-index: 50;
   font-family: "Coda", cursive;
-  transition: 0.5s;
-  transition-timing-function: ease-in;
+  transition: 0.2s;
+
 }
 .darkmenu {
-  background: rgb(132, 0, 255);
-  background: linear-gradient(
+  background-color: rgba(70, 0, 209, 0.726);
+  /*background-color: linear-gradient(
     24deg,
     rgba(132, 0, 255, 0) 14%,
     rgba(93, 0, 185, 0.6558998599439776) 60%,
     rgba(38, 0, 88, 1) 100%
-  );
-  display: flex;
-  width: 100%;
-  position: fixed;
-  z-index: 50;
-  font-family: "Coda", cursive;
-  height: 50px;
-  transition: 1s;
+    
+  );*/
+  transition: 5s;
 }
 .darkmenu > #logo-menu > img {
   height: 30px;
@@ -109,6 +104,7 @@ header label:hover {
 .mainmenu li a:active {
   color: rgb(0, 233, 163);
 }
+
 
 @media (max-width: 778px) {
   .mainmenu {

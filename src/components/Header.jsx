@@ -36,7 +36,7 @@ const Header = () => {
 
     return (
 
-        <div className={solidHeader?'menu':'darkmenu'} id="menu" >
+        <div className={solidHeader?'menu':'menu darkmenu'} id="menu" >
             <Link to="/" id="logo-menu">
                 <img className="logo" src={logo} alt="" />
             </Link>
