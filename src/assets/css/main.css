@@ -1,0 +1,326 @@
+/*hoja de estilos*/
+/*font-family: 'Coda', cursive;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Raleway', sans-serif;*/
+html{
+  overflow-x: hidden ;
+}
+body {
+  margin: 0px;
+  overflow-x: hidden;
+}
+h1 {
+  font-family: 'Coda', cursive;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+
+
+/*a.active{
+  color: white;
+}*/
+
+h2 {
+  font-family: "Raleway", sans-serif;
+  color: #64eb8d;
+}
+h4 {
+  font-family: 'Coda', cursive;
+  font-size: 24px;
+  text-align: center;
+  color: #6a42e5;
+}
+p {
+  font-family: "Open Sans", sans-serif;
+  padding: 10px;
+}
+
+
+#inicio {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(15, 1, 66, 0.733)),
+    url(../images/keyboard.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  height: 600px;
+  overflow: visible;
+  background-repeat: no-repeat;
+}
+
+
+#about-me{
+  background-image: url(../images/w2.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#contact-container{
+  background-image: url(../images/w2.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#contact-container h4{
+  margin: 0;
+  padding: 50px 0 0;
+
+}
+#skills {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  justify-content: space-around;
+  padding: 0px 70px 30px 70px;
+}
+
+.bio {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  justify-items: center;
+}
+
+.bio > div {
+  padding: 50px;
+}
+@media (max-width: 800px) {
+  .bio {
+    display: grid;
+    grid-template-rows: auto auto;
+  }
+}
+
+.fotoredonda {
+  height: 300px;
+  width: auto;
+  border-radius: 150px;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.527);
+}
+
+.section {
+  padding: 0px;
+}
+
+.prog{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+
+}
+
+#skills h5{
+  padding-top: 50px;
+  font-family: 'Raleway', sans-serif;
+  color: #1a1a1a;
+  
+}
+#skills h6{
+  margin: 0;
+  padding-top: 80px;
+  font-family: 'Coda', cursive;
+  color: #6a42e5;
+  font-size: 14px;
+  
+  
+}
+.big{
+  font-size: 72px;
+}
+
+#portfoliosection, #historia {
+  background-image:linear-gradient(rgba(0, 0, 0, 0.651), rgba(0, 0, 0, 0.541)),
+  url(../images/texture.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family:  'Coda', cursive;
+
+}
+#portfoliogallery{
+  display:flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  justify-content: space-around;
+  padding: 5%;
+  
+}
+.container{
+  position: relative;
+  height: 200px;
+  margin: 20px;
+}
+.imgportfolio{
+  width: 300px;
+  height: auto;
+  box-shadow: 10px 10px 10px black;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 101%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background: rgb(42,221,81);
+  background: linear-gradient(337deg, rgba(42,221,81,1) 22%, rgba(98,62,229,1) 70%);
+}
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: 'Coda', cursive;
+}
+.whitetitle{
+  color: #64eb8d;
+  padding-top: 100px;
+  margin-top: 0px;
+}
+.spacer-half{
+  height: 50px;
+}
+#contacto{
+  display:flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  justify-content: space-around;
+}
+
+#formulario {
+  padding: 30px;
+  margin: 50px;
+  /*background-color: #8964f7;*/
+  border-radius: 25px;
+  box-shadow: 0px 0px 10px black;
+  width: 400px;
+}
+
+label{
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  color:#313131;
+
+}
+
+#direccion{
+
+  padding: 30px;
+  margin: 50px;
+ /* margin-top: 100px;*/
+
+}
+
+input, textarea{
+  width: -webkit-fill-available;
+  background-color: #ffffff;
+  border: none;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.521);
+  border-radius:5px 5px 30px 5px;
+}
+input:focus, textarea:focus{
+  border:2px solid #6a42e5;
+  box-shadow: 0 0 5px #6a42e5;
+}
+
+:focus { outline: none; }
+
+input
+{
+  height: 30px;
+}
+textarea
+{
+  height:100px;
+}
+
+address, address a{
+  color: white;
+}
+
+
+
+.field-set{
+  margin-top: 10px;
+}
+.btn-mio {
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-size: 21px;
+  background-color: #623EE5;
+  border-radius: 5px 5px 40px 5px;
+  border: none;
+  width: 100px;
+
+}
+
+.btn-mio:hover 
+{
+  background-color: #2add51;
+  font-weight: 1000;
+}
+
+.mi-dato
+{
+background-color:#623EE5;
+margin-top: 30px;
+padding:15px;
+width:300px;
+border-radius: 5px 5px 40px 5px;
+}
+
+i{
+  margin:5px;
+}
+#historia{
+  display: flex;
+  flex-wrap:wrap;
+  box-sizing: border-box;
+  flex-direction: inherit;
+}
+.experiencia, .educacion{
+ width:500px;
+  display: block;
+  margin:50px;
+}
+.exp-box h5{
+  color: white;
+  border:2px solid #2add51;
+  padding:5px;
+  width: fit-content;
+  border-radius: 5px;
+  font-size: 14px;
+  
+}
+
+.exp-box h3{
+  color: rgb(218, 218, 218);
+  font-size: 14px;
+  
+
+}
+.exp-box p{
+  color: rgb(202, 202, 202);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+span{
+  font-family: 'Coda', cursive;
+}
+
+
+
+

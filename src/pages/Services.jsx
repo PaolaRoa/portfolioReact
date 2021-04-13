@@ -1,8 +1,12 @@
 import React from 'react';
+import '../assets/css/services.css';
 
 const Services = () => {
     return (
-        <h1>Servicios</h1>
+      <div id="services">
+           <h4>Servicios</h4>
+      </div>
+       
       );
 }
  

@@ -1,5 +1,6 @@
 import {React, useState} from 'react';
-import '../assets/css/portfolio.css';
+import '../assets/css/main.css';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faChevronLeft, faChevronCircleRight, faChevronRight} from '@fortawesome/free-solid-svg-icons';
 import bBeauty from '../assets/images/portfolio/beebeauty.png';
@@ -36,68 +37,51 @@ const Portfolio = () => {
 
 
     return ( 
-        <div id="portfolioContainer">
-        <h4>Portafolio</h4>
-        <div id="portfolio">
-            <div id="btnLeft">
-                <button className='arrow' onClick={()=>handleActive('last')} >{left}  </button>
+        <div id="portfoliosection">
+        <div>
+          <h4 className="whitetitle">Mis Proyectos</h4>
+        </div>
+        <div id="portfoliogallery">
+          <div className="container">
+            <img className="imgportfolio image" src="/images/portfolio/CARTAS PETERPAN.jpg" alt="Avatar" />
+            <div className="overlay">
+              <div className="text">Diseño de Papeleria corporativa</div>
             </div>
-            <div id="pContainer">
-                <div className={active===1? 'slide active': 'slide'} href="www.marilizcastillo.com">
-                    <div className="project">
-                        <img className="imgP" src={bBeauty} alt=""/>
-                    </div>
-                    <div class="overlay">
-                        <div class="text"><a href="https://beebeauty.vercel.app/" target='blank'>Desarrollo de tienda en linea</a></div>
-                    </div>
-                </div>
-                <div className={active===2? 'slide active': 'slide'}>
-                <div className="project">
-                    <img className="imgP" src={mLiz} alt=""/>
-                    </div>
-                    <div class="overlay">
-                        <div class="text"><a href="https://www.marilizcastillo.com/" target='blank'>Desarrollo de sitio web y tienda en linea</a></div>
-                    </div>
-                </div>
-                <div className={active===3? 'slide active': 'slide'}>
-                <div className="project">
-                        <img className="imgP" src={pPan} alt=""/>
-                    </div>
-                    <div class="overlay">
-                        <div class="text"><a href="https://www.panalerapeterpan.com/" target='blank' >Desarrollo de sitio web y tienda en linea</a></div>
-                    </div>
-                </div>
-                <div className={active===4? 'slide active': 'slide'}>
-                <div className="project">
-                        <img className="imgP" src={retos} alt=""/>
-                    </div>
-                    <div class="overlay">
-                        <div class="text"><a href="https://retosjs-epcbohk5t.vercel.app/" target='blank'>25 retos JavaScript</a></div>
-                    </div>
-                </div>
-                <div className={active===5? 'slide active': 'slide'}>
-                <div className="project">
-                        <img className="imgP" src={ctn} alt=""/>
-                    </div>
-                    <div class="overlay">
-                        <div class="text">Diseño de tarjetas de presentación</div>
-                    </div>
-                </div>
-                
-                <div className={active===6? 'slide active': 'slide'}>
-                <div className="project">
-                        <img className="imgP" src={mag} alt=""/>
-                    </div>
-                    <div class="overlay">
-                        <div class="text">Diseño de brochure</div>
-                    </div>
-                </div>
-                </div>
-            <div id='btnRight' className="btnContainer">
-                <button className='arrow' onClick={()=>handleActive('next')}>{right}</button>
+          </div>
+          <div className="container">
+            <img className="imgportfolio image" src="/images/portfolio/magnet.jpg" alt="Avatar" />
+            <div className="overlay">
+              <div className="text">Diseño de Brochure</div>
             </div>
+          </div>
+          
+          <div className="container">
+            <img className="imgportfolio image" src="/images/portfolio/CARTAS PETERPAN.jpg" alt="Avatar" />
+            <div className="overlay">
+              <div className="text">Diseño de Papeleria corporativa</div>
+            </div>
+          </div>
+          <div className="container">
+            <img className="imgportfolio image" src="/images/portfolio/ctntarjeta.jpg" alt="Avatar" />
+            <div className="overlay">
+              <div className="text">Diseño de tarjeta</div>
+            </div>
+          </div>
+          <div className="container">
+            <img className="imgportfolio image" src="/images/portfolio/CARTAS PETERPAN.jpg" alt="Avatar" />
+            <div className="overlay">
+              <div className="text">Diseño de Papeleria corporativa</div>
+            </div>
+          </div>
+          <div className="container">
+            <img className="imgportfolio image" src="/images/portfolio/CARTAS PETERPAN.jpg" alt="Avatar" />
+            <div className="overlay">
+              <div className="text">Diseño de Papeleria corporativa</div>
+            </div>
+          </div>
         </div>
         </div>
+
     )
 }
  

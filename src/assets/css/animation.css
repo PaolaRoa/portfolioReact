@@ -1,0 +1,102 @@
+/*animacion del titulo desarrolladora web*/
+.blur {
+    animation-duration: 3s;
+    animation-name: itemin;
+    animation-timing-function: ease-out;
+  }
+  @keyframes itemin {
+    from {
+      filter: blur(10px);
+    }
+    to {
+      filter: blur(0px);
+    }
+  }
+
+  /*animacion de la barra de progreso*/
+  .progress{ 
+    background: #161616a2; 
+    border-radius: 13px; 
+    height: 5px; 
+    width: 300px; 
+    padding: 0; 
+    box-shadow: -3px 2px 3px rgba(0, 0, 0, 0.534);
+  }
+  .progress:after { 
+    content: ''; 
+    display: block; 
+    background: #5801FF;
+    background: -webkit-linear-gradient(left, #5801FF, #01FF1D);
+    background: -moz-linear-gradient(left, #5801FF, #01FF1D);
+    background: linear-gradient(to right, #5801FF, #01FF1D);
+    width: 30%; 
+    height: 100%; 
+    border-radius: 13px; 
+    animation-name: progressbar;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+
+  }
+ 
+  .progress25{ 
+    background: #161616a2; 
+    border-radius: 13px; 
+    height: 5px; 
+    width: 300px; 
+    padding: 0; 
+    box-shadow: -3px 2px 3px rgba(0, 0, 0, 0.534);
+  }
+  
+  progress25:after { 
+    content: ''; 
+    display: block; 
+  
+    width: 25%; 
+    height: 100%; 
+    border-radius: 13px; 
+    /*animation-name: progressbar;
+    animation-duration: 3s;*/
+
+  }
+  
+  @keyframes progressbar{
+    from {width:1%;}
+  
+  }
+
+  .progress30{ 
+    background: #161616a2; 
+    border-radius: 13px; 
+    height: 5px; 
+    width: 300px; 
+    padding: 0; 
+    box-shadow: -3px 2px 3px rgba(0, 0, 0, 0.534);
+  }
+  .progress30:after { 
+    content: ''; 
+    display: block; 
+    width: 30%; 
+    height: 100%; 
+    border-radius: 13px; 
+    /*animation-name: progressbar;
+    animation-duration: 3s;*/
+  }
+
+  .progress40{ 
+    background: #161616a2; 
+    border-radius: 13px; 
+    height: 5px; 
+    width: 300px; 
+    padding: 0; 
+    box-shadow: -3px 2px 3px rgba(0, 0, 0, 0.534);
+  }
+  .progress40:after { 
+    content: ''; 
+    display: block; 
+    width: 40%; 
+    height: 100%; 
+    border-radius: 13px; 
+    /*animation-name: progressbar;
+    animation-duration: 3s;*/
+  }
+

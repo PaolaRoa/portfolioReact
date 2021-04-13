@@ -47,13 +47,13 @@ const Header = () => {
                 <nav className="mainmenu">
                     <ul>
                         <li>
-                            <Link to="/">Inicio</Link>
+                            <a href="#bienvenida">Inicio</a>
                         </li>
                         <li>
-                            <Link to="/about">Sobre mí</Link>
+                            <a href="#about-me">Sobre mí</a>
                         </li>
                         <li>
-                            <Link to="/portfolio">Portafolio</Link>
+                            <a href="#portfolioContainer">Portafolio</a>
                         </li>
                         <li>
                             <Link to="/services">Servicios</Link>

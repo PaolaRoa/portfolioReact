@@ -5,6 +5,8 @@ import Footer from '../components/Footer';
 import About from './About';
 import Skills from './Skills'
 import Portfolio from './Portfolio';
+import Services from './Services';
+
 
 
 const Home = () => {
@@ -16,6 +18,7 @@ const Home = () => {
         </div>
         <About />
         <Portfolio />
+        <Services />
         <Footer />
         </>
     );
