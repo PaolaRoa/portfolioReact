@@ -1,5 +1,5 @@
 #portfolioContainer {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(15, 1, 66, 0.733)),url("../images/bgPurple.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.542), rgba(9, 0, 39, 0.733)),url("../images/bgPurple.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -7,6 +7,7 @@
 #portfolioContainer>h4{
     margin: 0;
     padding-top: 50px;
+    padding-bottom: 50px;
     text-align: center;
     color: rgb(197, 197, 197);
     font-family: 'Coda', cursive;
@@ -22,6 +23,7 @@
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   align-items: center;
+  justify-items: center;
 }
 .arrow {
   font-size: 18px;
@@ -34,16 +36,12 @@
   background-image: url(../images/portfolio/beebeauty.png);
 }
 .slide {
+  opacity: 0;
   display: none;
   background-position: center center;
   background-size: cover;
   position: relative;
-  transition: 0.4s ease;
-  width: 90vw;
-  height: 70vh;
-  transition: 0.4s ease;
-  width: 90vw;
-  height: 90vh;
+  height: 50vh;
   margin: 0;
 }
 
@@ -54,7 +52,8 @@
   justify-content: space-around;
   align-items: center;
   justify-content: center;
-  align-items: center;
+  align-items: center; 
+  height: 50vh;
 }
 
 .project {
@@ -62,9 +61,35 @@
     border-radius: 20px;
 }
 #pContainer {
+  padding-bottom: 50px;
 }
 
 .imgP{
     border-radius: 15px;
-    height: 70vh;
+   width: 70vw;
+
+}
+.slide.active>.project>.imgP{
+  box-shadow: 0px 0px 20px rgb(10 10 10);
+}
+
+.overlay {
+  position: absolute;
+  opacity: 0;
+
+}
+.overlay:hover{
+  opacity: 1;
+}
+.imgP:hover{
+  filter: brightness(0.2);
+}
+.text>a{
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+  text-align: center;
+  position: relative;
+  top: 40%;
+  font-family: 'Coda';
 }

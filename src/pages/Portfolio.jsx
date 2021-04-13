@@ -4,7 +4,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faChevronLeft, faChevronCircleRight, faChevronRight} from '@fortawesome/free-solid-svg-icons';
 import bBeauty from '../assets/images/portfolio/beebeauty.png';
 import mLiz from '../assets/images/portfolio/www.marilizcastillo.com_.png';
-import pPan from '../assets/images/portfolio/panalera.jpg';
+import pPan from '../assets/images/portfolio/peterpan.png';
+import ctn from '../assets/images/portfolio/ctntarjeta.jpg';
+import mag from '../assets/images/portfolio/magnet.jpg';
 
 const Portfolio = () => {
 
@@ -15,7 +17,7 @@ const Portfolio = () => {
 
     const handleActive = (direction)=>{
         if(direction === 'next'){
-            if(active === 3){
+            if(active === 5){
                 setActive(1);
             }
             else{
@@ -23,7 +25,7 @@ const Portfolio = () => {
         }
         else{
             if(active === 1){
-                setActive(3)
+                setActive(5)
             }
             else{
                 setActive((active)=>active-1)
@@ -44,6 +46,9 @@ const Portfolio = () => {
                     <div className="project">
                         <img className="imgP" src={bBeauty} alt=""/>
                     </div>
+                    <div class="overlay">
+                        <div class="text"><a href="https://beebeauty.vercel.app/">Desarrollo de tienda en linea</a></div>
+                    </div>
                 </div>
                 <div className={active===2? 'slide active': 'slide'}>
                 <div className="project">
@@ -55,7 +60,17 @@ const Portfolio = () => {
                         <img className="imgP" src={pPan} alt=""/>
                     </div>
                 </div>
-            </div>
+                <div className={active===4? 'slide active': 'slide'}>
+                <div className="project">
+                        <img className="imgP" src={ctn} alt=""/>
+                    </div>
+                </div>
+                <div className={active===5? 'slide active': 'slide'}>
+                <div className="project">
+                        <img className="imgP" src={mag} alt=""/>
+                    </div>
+                </div>
+                </div>
             <div id='btnRight' className="btnContainer">
                 <button className='arrow' onClick={()=>handleActive('next')}>{right}</button>
             </div>
