@@ -54,20 +54,33 @@ const Portfolio = () => {
                 <div className="project">
                     <img className="imgP" src={mLiz} alt=""/>
                     </div>
+                    <div class="overlay">
+                        <div class="text"><a href="https://beebeauty.vercel.app/">Desarrollo de sitio web y tienda en linea</a></div>
+                    </div>
                 </div>
                 <div className={active===3? 'slide active': 'slide'}>
                 <div className="project">
                         <img className="imgP" src={pPan} alt=""/>
+                    </div>
+                    <div class="overlay">
+                        <div class="text"><a href="https://beebeauty.vercel.app/">Desarrollo de sitio web y tienda en linea</a></div>
                     </div>
                 </div>
                 <div className={active===4? 'slide active': 'slide'}>
                 <div className="project">
                         <img className="imgP" src={ctn} alt=""/>
                     </div>
+                    <div class="overlay">
+                        <div class="text"><a href="https://beebeauty.vercel.app/">Diseño de tarjetas de presentación</a></div>
+                    </div>
                 </div>
+                
                 <div className={active===5? 'slide active': 'slide'}>
                 <div className="project">
                         <img className="imgP" src={mag} alt=""/>
+                    </div>
+                    <div class="overlay">
+                        <div class="text"><a href="https://beebeauty.vercel.app/">Diseño de brochure</a></div>
                     </div>
                 </div>
                 </div>
