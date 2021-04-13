@@ -45,7 +45,7 @@
   background-position: center center;
   background-size: cover;
   position: relative;
-  height: 50vh;
+  width: 60vw;
   margin: 0;
 }
 
@@ -57,8 +57,7 @@
   align-items: center;
   justify-content: center;
   align-items: center; 
-  height: 50vh;
-}
+  width: 60vw;}
 
 .project {
 
@@ -69,8 +68,9 @@
 }
 
 .imgP{
+ /* margin-top: 50px;*/
     border-radius: 15px;
-   width: 70vw;
+   width: 60vw;
    transition: all 0.5s;
 
 }
@@ -94,7 +94,7 @@
   opacity: 1;
 
 }
-.text>a{
+.text, .text>a{
   color: white;
   font-size: 24px;
   text-decoration: none;
