@@ -86,11 +86,11 @@
 .overlay:hover{
   
 }
-.slide.active:hover .imgP{
+.slide:hover .imgP{
   filter: brightness(0.2);
   transition: all 0.5s;
 }
-.slide.active:hover .overlay{
+.slide:hover .overlay{
   opacity: 1;
 
 }
@@ -102,4 +102,20 @@
   position: relative;
   top: 40%;
   font-family: 'Coda';
+}
+
+@media(max-width : 600px){
+  .arrow{
+    display: none;
+  }
+  .slide, .slide.active{
+    display: block;
+    opacity: 1;
+    margin: 20px;
+  }
+  .slide:active .imgP, .slide.active:active .imgP{
+    filter: brightness(0.2);
+    transition: all 0.5s;
+  }
+
 }
