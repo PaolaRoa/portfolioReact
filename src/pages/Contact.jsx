@@ -1,11 +1,23 @@
 import React from 'react';
 import{ init } from 'emailjs-com';
-import emailjs from 'emailjs-com';
+import * as emailjs from 'emailjs-com';
 init("user_aAfp4062AmlS3zCsrNrnK");
 
+var templateParams = {
+    name: 'James',
+    notes: 'Check this out!'
+};
+ 
+
 const Contact = () => {
-    function sendEmail(e) {
+    function sendEmail(e){
         e.preventDefault();
+       /* emailjs.send('portfoliopage', 'template_idfq4ap', templateParams)
+    .then(function(response) {
+       console.log('SUCCESS!', response.status, response.text);
+    }, function(error) {
+       console.log('FAILED...', error);
+    });*/
     
         emailjs.sendForm('portfoliopage', 'template_idfq4ap', e.target, 'user_aAfp4062AmlS3zCsrNrnK')
           .then((result) => {
@@ -22,14 +34,14 @@ const Contact = () => {
                     <form name="contactForm" onSubmit={sendEmail}>
 
                         <div class="field-set">
-                            <label for="name">Tu Nombre</label><br />
-                            <input type='text' name='name' id='name' class="form-control"
+                            <label for="from_name">Tu Nombre</label><br />
+                            <input type='text' name='from_name' id='name' class="form-control"
                                 placeholder="Elliot Alderson" />
                         </div>
 
                         <div class="field-set">
-                            <label for="email">Tu Correo Electronico</label><br />
-                            <input type='text' name='email' id='email' class="form-control"
+                            <label for="reply_to">Tu Correo Electronico</label><br />
+                            <input type='text' name='reply_to' id='email' class="form-control"
                                 placeholder="elliotalderson@protonmail.ch" />
                         </div>
 
