@@ -13,7 +13,7 @@ const About = () => {
             <div>
             <h4 id="aboutTitle">Sobre mí</h4>
                 <p>
-                Estoy en constante proceso de aprendizaje en el entorno del desarrollo de software, me
+                Estoy en constante proceso de aprendizaje, actualmente soy aprendiz SENA en el entorno del desarrollo de software, me
                 interesa y me apasiona la programación, el desarrollo de sitios web, así como el diseño de piezas gráficas y el marketing digital.
                 Me considero una persona creativa y con habilidades para la resolución de problemas,
                me encanta aportar mis habilidades a

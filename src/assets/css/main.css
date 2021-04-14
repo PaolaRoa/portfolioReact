@@ -64,6 +64,7 @@ p {
 #contact-container h4{
   margin: 0;
   padding: 50px 0 0;
+  color: #6a42e5;
 
 }
 #skills {
@@ -150,8 +151,10 @@ p {
   position: relative;
   height: 200px;
   margin: 20px;
+  transition: all 0.5s;
 }
 .imgportfolio{
+  transition: all 0.5s;
   width: 300px;
   height: auto;
   box-shadow: 10px 10px 10px black;
@@ -162,28 +165,29 @@ p {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 101%;
+  /*height: 101%;*/
+  height: 85%;
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background: rgb(42,221,81);
-  background: linear-gradient(337deg, rgba(42,221,81,1) 22%, rgba(98,62,229,1) 70%);
+  /*background: rgba(0, 13, 54, 0.295*/
+  background: linear-gradient(337deg, rgba(20, 13, 121, 0.801) 30%, rgba(15, 0, 61, 0.747) 70%);
 }
 .container:hover .overlay {
   opacity: 1;
 }
 
-.text {
+.text,.text>a {
   color: white;
-  font-size: 20px;
+  font-size: 18px;
   position: absolute;
+  width: -webkit-fill-available;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
   font-family: 'Coda', cursive;
+  text-decoration: none;
 }
 .whitetitle{
   color: #64eb8d;
@@ -220,6 +224,7 @@ label{
 
   padding: 30px;
   margin: 50px;
+  width: 400px;
  /* margin-top: 100px;*/
 
 }
@@ -321,6 +326,10 @@ span{
   font-family: 'Coda', cursive;
 }
 
-
+/*@media(max-widt: 1080px){
+  #contacto{
+    flex-wrap: wrap;
+  }
+}*/
 
 
