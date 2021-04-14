@@ -1,12 +1,25 @@
 import React from 'react';
+import{ init } from 'emailjs-com';
+import emailjs from 'emailjs-com';
+init("user_aAfp4062AmlS3zCsrNrnK");
 
 const Contact = () => {
+    function sendEmail(e) {
+        e.preventDefault();
+    
+        emailjs.sendForm('portfoliopage', 'template_idfq4ap', e.target, 'user_aAfp4062AmlS3zCsrNrnK')
+          .then((result) => {
+              console.log("enviado");
+          }, (error) => {
+              console.log("no se pudo enviar");
+          });
+      }
     return (
         <div id="contact-container">
             <h4>¿Hablamos?</h4>
             <div id="contacto">
                 <div id="formulario">
-                    <form name="contactForm" id='contact_form' method="post" action='email.php'>
+                    <form name="contactForm" onSubmit={sendEmail}>
 
                         <div class="field-set">
                             <label for="name">Tu Nombre</label><br />
