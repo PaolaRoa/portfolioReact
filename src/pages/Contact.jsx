@@ -1,31 +1,49 @@
 import React from 'react';
 import{ init } from 'emailjs-com';
 import * as emailjs from 'emailjs-com';
+import swal from 'sweetalert';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faWhatsapp, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+import {faMapMarker, faEnvelope, faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import '../assets/css/contact.css';
 init("user_aAfp4062AmlS3zCsrNrnK");
 
-var templateParams = {
-    name: 'James',
-    notes: 'Check this out!'
-};
- 
+
 
 const Contact = () => {
+
+    const waIcon = <FontAwesomeIcon icon ={faWhatsapp} className="iC" status/>;
+    const mail = <FontAwesomeIcon icon ={faEnvelope} className="iC" status/>;
+    const map = <FontAwesomeIcon icon ={faMapMarker} className="iC" status/>;
+
+
+
     function sendEmail(e){
         e.preventDefault();
-       /* emailjs.send('portfoliopage', 'template_idfq4ap', templateParams)
-    .then(function(response) {
-       console.log('SUCCESS!', response.status, response.text);
-    }, function(error) {
-       console.log('FAILED...', error);
-    });*/
-    
         emailjs.sendForm('portfoliopage', 'template_idfq4ap', e.target, 'user_aAfp4062AmlS3zCsrNrnK')
           .then((result) => {
               console.log("enviado");
+             cleanForm();
+              swal("enviado", "¡pronto responderé a tu mensaje!", "success");
           }, (error) => {
               console.log("no se pudo enviar");
+              swal("...ups!", "se solto una tuerca y tu mensaje no se envio", "success");
           });
       }
+
+      const cleanForm = ()=>{
+        const inputs= document.getElementsByTagName('input');
+        const text= document.getElementsByTagName('textarea');
+        console.log(text.innerHTML)
+        for(let input of inputs){
+            console.log(input.value);
+            if (input.type ==='text' || input.type ==='textarea'){
+                input.value = "";
+            }
+            
+        }
+      }
+
     return (
         <div id="contact-container">
             <h4>¿Hablamos?</h4>
@@ -67,14 +85,14 @@ const Contact = () => {
                 <div id="direccion">
                 <address>
                     <div class="mi-dato">
-                        <span><i class="fa fa-building"></i>Bogotá, Colombia</span><br />
+                        <span>{map}Bogotá, Colombia</span><br />
                     </div>
                     <div class="mi-dato">
-                        <span class="mi-dato"><a href="https://wa.me/573214845851" target="blank"><i class="fab fa-whatsapp"></i>  +57 321 484 5851</a></span><br />
+                        <span class="mi-dato"><a href="https://wa.me/573214845851" target="blank">{waIcon}  +57 321 484 5851</a></span><br />
                     </div>
                     <div class="mi-dato">
                         <span><a
-                            href="mailto:e.creativo.a@gmail.com"><i class="fa fa-envelope"></i>  e.creativo.a@gmail.com</a></span>
+                            href="mailto:e.creativo.a@gmail.com">{mail}e.creativo.a@gmail.com</a></span>
                     </div>
                 </address>
             </div>

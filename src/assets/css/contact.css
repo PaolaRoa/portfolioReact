@@ -1,0 +1,12 @@
+.iC{
+    color: #eee;
+    font-size: 1.2em;
+    padding: 0;
+}
+a:hover{
+    color:  rgb(0, 233, 163);
+
+}
+a:hover>.iC{
+    color:  rgb(0, 233, 163);
+}
