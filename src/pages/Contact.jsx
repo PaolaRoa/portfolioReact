@@ -34,7 +34,7 @@ const Contact = () => {
       const cleanForm = ()=>{
         const inputs= document.getElementsByTagName('input');
         const text= document.getElementsByTagName('textarea');
-        console.log(text.innerHTML)
+        console.log(text)
         for(let input of inputs){
             console.log(input.value);
             if (input.type ==='text' || input.type ==='textarea'){
