@@ -48,13 +48,6 @@ p {
 }
 
 
-#about-me{
-  background-image: url(../images/w2.jpg);
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 #contact-container{
   background-image: url(../images/w2.jpg);
   background-attachment: fixed;
@@ -190,7 +183,7 @@ p {
   text-decoration: none;
 }
 .whitetitle{
-  color: #64eb8d;
+  color:#ffffff;;
   padding-top: 100px;
   margin-top: 0px;
 }

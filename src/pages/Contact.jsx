@@ -3,8 +3,8 @@ import{ init } from 'emailjs-com';
 import * as emailjs from 'emailjs-com';
 import swal from 'sweetalert';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faWhatsapp, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
-import {faMapMarker, faEnvelope, faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import {faMapMarker, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import '../assets/css/contact.css';
 init("user_aAfp4062AmlS3zCsrNrnK");
 
