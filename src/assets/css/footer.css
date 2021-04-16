@@ -63,10 +63,16 @@ footer
       display: flex;
     flex-direction: column;
     justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+    position: relative;
     }
-    footer:hover{
-      height: auto;
+    .openCloseFooter{
+      display: none;
     }
+
   
 
 

@@ -12,7 +12,7 @@
     grid-template-columns: auto auto;
     justify-content: space-around;
     justify-items: center;
-    padding-top: 89px;
+  
     height: auto;
   }
   #aboutTitle{
@@ -33,5 +33,10 @@
     .bio {
       display: flex;
       flex-wrap: wrap;
-    }
+  }
+  .bio > div {
+    padding: 20px;
+  }
+      
+    
   }
