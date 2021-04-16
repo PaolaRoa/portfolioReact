@@ -20,7 +20,7 @@ const Home = () => {
         <About />
         <Portfolio />
         <Contact />
-        <Footer />
+       <Footer />
         </>
     );
 }
