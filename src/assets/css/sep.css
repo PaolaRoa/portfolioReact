@@ -6,7 +6,7 @@
     height: 200px;
     position: absolute;
     background-repeat: no-repeat;
-    bottom: 50px;
+    bottom: 40px;
     left: -10px;
 }
 @media(max-width:800px){
