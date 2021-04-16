@@ -1,0 +1,22 @@
+.sep{
+    background-image: url(../images/separador.svg);
+    margin-left: 0;
+    width: 100vw;
+    position: absolute;
+    height: 200px;
+    position: absolute;
+    background-repeat: no-repeat;
+    bottom: 50px;
+    left: -10px;
+}
+@media(max-width:800px){
+    .sep{
+
+        bottom: 30px;
+    }
+}
+@media(max-width:700px){
+    .sep{
+        display: none;
+    }
+}

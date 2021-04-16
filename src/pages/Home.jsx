@@ -7,6 +7,7 @@ import Skills from './Skills'
 import Portfolio from './Portfolio';
 import Services from './Services';
 import Contact from './Contact';
+import Sep from '../components/Sep';
 
 
 
@@ -16,6 +17,7 @@ const Home = () => {
         <div id="bienvenida">
             <h1>Hola,<br />Soy Paola Roa</h1>
             <h2 className="blur">Desarrolladora de Software</h2>
+            <Sep />
         </div>
         <About />
         <Portfolio />
