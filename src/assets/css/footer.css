@@ -39,7 +39,7 @@ footer
     color: gainsboro;
     font-size: 14px;
   }
-  .copy>p{
+  .copy>div>p{
     padding: 0;
   }
   .RRSS
