@@ -25,18 +25,6 @@ function App() {
       <Route exact path="/">
           <Home />
       </Route>
-      <Route path="/about">
-        <About />
-      </Route>
-      <Route path="/portfolio">
-        <Portfolio />
-      </Route>
-      <Route path="/contact">
-        <Contact />
-      </Route>
-      <Route path="/services">
-        <Services />
-      </Route>
     </Router>
     </>
   );

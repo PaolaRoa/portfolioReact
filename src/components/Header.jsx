@@ -46,39 +46,33 @@ const Header = () => {
                 }</button>
                 <nav className="mainmenu">
                     <ul>
-                        <li>
-                            <a href="#bienvenida">Inicio</a>
+                    <li>
+                            <a  href='#bienvenida'>Inicio</a>
                         </li>
                         <li>
-                            <a href="#about-me">Sobre mí</a>
+                            <a href='#about-me'>Sobre mí</a>
                         </li>
                         <li>
-                            <a href="#portfolioContainer">Portafolio</a>
+                            <a href='#portfoliosection'>Portafolio</a>
                         </li>
                         <li>
-                            <Link to="/services">Servicios</Link>
-                        </li>
-                        <li>
-                            <Link to="/contact">Contáctame</Link>
+                            <a href='#contact-container'>Contáctame</a>
                         </li>
                     </ul>
                 </nav>
                 <nav className={movilMenu? 'movilmenu' : 'movilmenu hide'}>
                                         <ul>
                         <li>
-                            <Link to="/">Inicio</Link>
+                            <a  href='#bienvenida'>Inicio</a>
                         </li>
                         <li>
-                            <Link to="/about">Sobre mí</Link>
+                            <a href='#about-me'>Sobre mí</a>
                         </li>
                         <li>
-                            <Link to="/portfolio">Portafolio</Link>
+                            <a href='#portfoliosection'>Portafolio</a>
                         </li>
                         <li>
-                            <Link to="/services">Servicios</Link>
-                        </li>
-                        <li>
-                            <Link to="/contact">Contáctame</Link>
+                            <a href='#contact-container'>Contáctame</a>
                         </li>
                     </ul>
                 </nav>

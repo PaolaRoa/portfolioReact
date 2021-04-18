@@ -49,17 +49,17 @@ const Contact = () => {
             <h4>¿Hablamos?</h4>
             <div id="contacto">
                 <div id="formulario">
-                    <form name="contactForm" onSubmit={sendEmail}>
+                    <form name="contactForm" onSubmit={sendEmail} method='post' action=''>
 
                         <div class="field-set">
                             <label for="from_name">Tu Nombre</label><br />
-                            <input type='text' name='from_name' id='name' class="form-control"
+                            <input type='text' name='from_name' id='from_name' class="form-control"
                                 placeholder="Elliot Alderson" />
                         </div>
 
                         <div class="field-set">
                             <label for="reply_to">Tu Correo Electronico</label><br />
-                            <input type='text' name='reply_to' id='email' class="form-control"
+                            <input type='email' name='reply_to' id='email' class="form-control"
                                 placeholder="elliotalderson@protonmail.ch" />
                         </div>
 
@@ -95,6 +95,11 @@ const Contact = () => {
                             href="mailto:e.creativo.a@gmail.com">{mail}e.creativo.a@gmail.com</a></span>
                     </div>
                 </address>
+                <form action="">
+                    <input type="text"/>
+                    <input type="text"/>
+                    <input type="text"/>
+                </form>
             </div>
 
             </div>

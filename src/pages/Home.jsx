@@ -17,7 +17,6 @@ const Home = () => {
         <div id="bienvenida">
             <h1>Hola,<br />Soy Paola Roa</h1>
             <h2 className="blur">Desarrolladora de Software</h2>
-            <Sep />
         </div>
         <About />
         <Portfolio />
