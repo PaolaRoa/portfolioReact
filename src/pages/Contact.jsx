@@ -95,11 +95,7 @@ const Contact = () => {
                             href="mailto:e.creativo.a@gmail.com">{mail}e.creativo.a@gmail.com</a></span>
                     </div>
                 </address>
-                <form action="">
-                    <input type="text"/>
-                    <input type="text"/>
-                    <input type="text"/>
-                </form>
+
             </div>
 
             </div>

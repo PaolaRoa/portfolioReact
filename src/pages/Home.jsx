@@ -11,16 +11,22 @@ import Sep from '../components/Sep';
 
 
 
+
 const Home = () => {
+
+	
+
     return (  
         <>
         <div id="bienvenida">
             <h1>Hola,<br />Soy Paola Roa</h1>
             <h2 className="blur">Desarrolladora de Software</h2>
         </div>
+
         <About />
         <Portfolio />
         <Contact />
+       
        <Footer />
         </>
     );
