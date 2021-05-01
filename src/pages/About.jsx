@@ -1,6 +1,7 @@
 import React from 'react';
 import '../assets/css/about.css';
 import fotoPerfil from '../assets/images/fotoperfil-100.jpg';
+import CV from '../assets/HojadeVida.pdf'
 import Footer from '../components/Footer.jsx';
 
 const About = () => {
@@ -19,6 +20,7 @@ const About = () => {
                me encanta aportar mis habilidades a
                 los proyectos en los que me involucro, dejando lo mejor de mi mientras adquiero nuevos conocimientos y mejoro mis habilidades.
             </p>
+            <a href={CV}  download="CVPaolaRoa">Descarga mi CV</a>
         </div>
         </div>
        
