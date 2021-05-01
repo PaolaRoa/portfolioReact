@@ -33,11 +33,11 @@ const Contact = () => {
 
       const cleanForm = ()=>{
         const inputs= document.getElementsByTagName('input');
-        const text= document.getElementsByTagName('textarea');
-        console.log(text)
+        const message= document.getElementById('message');
+        message.value = "";
         for(let input of inputs){
             console.log(input.value);
-            if (input.type ==='text' || input.type ==='textarea'){
+            if (input.type !== "submit"){
                 input.value = "";
             }
             

@@ -116,7 +116,7 @@ header label:hover {
     background-color: #8d7cf2;
     transition: all 0.5s;
     width: fit-content;
-    height: 100vh;
+    /*height: 100vh;*/
   }
   .movilmenu.hide {
     margin-left: -100vw;
