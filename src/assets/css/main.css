@@ -220,10 +220,24 @@ span{
   font-family: 'Coda', cursive;
 }
 
-/*@media(max-widt: 1080px){
-  #contacto{
-    flex-wrap: wrap;
-  }
-}*/
+::placeholder{
+  color: rgb(122, 112, 145);
+}
+.actionBtn{
+  background: #02AAB0;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #00CDAC, #02AAB0);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #00CDAC, #02AAB0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+  border: none;
+  border-radius: 5px 5px 40px 5px;
+  padding: 5px;
+  color: white;
+  font-size: 16px;
+  width: -webkit-fill-available;
+}
+.actionBtn:hover{
+  background: rgb(159,107,255);
+  background: linear-gradient(304deg, rgba(159,107,255,0.4514180672268907) 0%, rgba(111,0,255,0.8827906162464986) 32%, rgba(152,22,149,1) 100%);  
+}
 
 

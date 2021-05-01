@@ -20,7 +20,13 @@ const About = () => {
                me encanta aportar mis habilidades a
                 los proyectos en los que me involucro, dejando lo mejor de mi mientras adquiero nuevos conocimientos y mejoro mis habilidades.
             </p>
-            <a href={CV}  download="CVPaolaRoa">Descarga mi CV</a>
+    
+                <a href={CV}  download="CVPaolaRoa">
+                    <button  className="actionBtn">
+                        Descarga mi CV
+                    </button>
+                </a>
+
         </div>
         </div>
        
