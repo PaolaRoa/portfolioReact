@@ -66,11 +66,14 @@ footer
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: auto;
+    height: 300px;
     position: relative;
     }
     .openCloseFooter{
       display: none;
+    }
+    footer:hover{
+      height: 300px;
     }
 
   
