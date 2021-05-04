@@ -8,6 +8,7 @@ import pPan from '../assets/images/portfolio/peterpan.png';
 import ctn from '../assets/images/portfolio/ctntarjeta.jpg';
 import mag from '../assets/images/portfolio/magnet.jpg';
 import retos from '../assets/images/portfolio/retos.png';
+import casas from '../assets/images/portfolio/airbnb.png';
 
 const Portfolio = () => {
 
@@ -53,6 +54,12 @@ const Portfolio = () => {
             <img className="imgportfolio image" src={ctn} alt="Avatar" />
             <div className="overlay">
               <div className="text">Diseño de tarjetas de presentación</div>
+            </div>
+          </div>
+          <div className="container">
+          <img className="imgportfolio image" src={casas} alt="Avatar" />
+            <div className="overlay">
+              <div className="text"><a href="http://proyectocasas.programate.tech/" target="blank" >Desarrollo de sitio web</a></div>
             </div>
           </div>
         </div>
