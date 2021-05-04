@@ -19,7 +19,7 @@ const About = () => {
                 Me considero una persona creativa y con habilidades para la resolución de problemas,
                me encanta aportar mis habilidades a
                 los proyectos en los que me involucro, dejando lo mejor de mi mientras adquiero nuevos conocimientos y mejoro mis habilidades.
-                Actualmente me encuentro cursando Análisis y Desarrollo de Sistemas de Información en el SENA y realizando el bootcamp "programáte" becada por la fundación Educamas y Simplon.
+                Actualmente me encuentro cursando Análisis y Desarrollo de Sistemas de Información en el SENA y realizando el bootcamp de desarrollo fullstack "prográmate" becada por la fundación Educamas y Simplon.
             </p>
     
                 <a href={CV}  download="CVPaolaRoa">
